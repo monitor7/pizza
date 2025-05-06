@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú de Pizzería</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff4e6;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            background-image: url('R.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(211, 84, 0, 0.7); /* superposición naranja */
+            z-index: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .menu {
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .categoria {
+            margin-top: 30px;
+        }
+
+        .categoria h2 {
+            color: #e67e22;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px dashed #ccc;
+            padding: 10px 0;
+        }
+
+        .item-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .item-info img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .precio {
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .qr {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .qr p {
+            margin-bottom: 10px;
+        }
+
+        .qr img {
+            border: 2px solid #e67e22;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pizzería Bruno</h1>
+    </header>
+
+    <div class="menu">
+        <div class="categoria">
+            <h2>Pizzas Clásicas</h2>
+            <div class="item">
+                <div class="item-info">
+                    <img src="margherita-essen-diy-1536x1238.jpeg" alt="Margarita">
+                    <span>Margarita</span>
+                </div>
+                <span class="precio">$150.00</span>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <img src="OIP.jpeg" alt="Hawaiana">
+                    <span>Hawaiana</span>
+                </div>
+                <span class="precio">$200.00</span>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <img src="OIP (1).jpeg" alt="Pepperoni">
+                    <span>Pepperoni</span>
+                </div>
+                <span class="precio">$300.00</span>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2>Bebidas</h2>
+            <div class="item">
+                <div class="item-info">
+                    <img src="cold-drink.jpg" alt="Refresco">
+                    <span>Refresco</span>
+                </div>
+                <span class="precio">$30.00</span>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <img src="00750302132109L.webp" alt="Agua">
+                    <span>Agua</span>
+                </div>
+                <span class="precio">$20.00</span>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2>Postres</h2>
+            <div class="item">
+                <div class="item-info">
+                    <img src="R (1).jpeg" alt="Tiramisú">
+                    <span>Tiramisú</span>
+                </div>
+                <span class="precio">$50.60</span>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <img src="helado-3.jpg" alt="Helado">
+                    <span>Helado</span>
+                </div>
+                <span class="precio">$45.00</span>
+            </div>
+        </div>
+
+        <div class="qr">
+            <p>Escanea el código QR para ver el menú en línea:</p>
+        </div>
+    </div>
+</body>
+</html>
+
